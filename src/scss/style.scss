@@ -563,3 +563,94 @@ body._lock {
     }
   }
 }
+
+/*-------------------------------------------------------------*/
+/*-----Contact--------------------------------------------------*/
+/*-------------------------------------------------------------*/
+.contact__container {
+  display: flex;
+  gap: 50px 50px;
+}
+._container {
+}
+.contact__info {
+  max-width: 600px;
+}
+.contact__title {
+  margin: 0;
+  text-align: left;
+  margin-bottom: 25px;
+}
+
+.contact__paragrapgh {
+  font-size: 20px;
+  line-height: 30px;
+  color: #8f95a5;
+  margin-bottom: 20px;
+}
+
+.contact__image {
+  max-width: 500px;
+  & img {
+    width: 100%;
+  }
+}
+
+.contact__form {
+  display: flex;
+  gap: 40px 10px;
+}
+.contact__input {
+  border: 1px solid #8f95a5;
+  padding: 10px 20px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.contact__button {
+  display: block;
+  min-width: 160px;
+  padding: 15px 20px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  color: #ffffff;
+  background: #263238;
+  border-radius: 10px;
+  border: 2px solid #263238;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+
+  &:hover {
+    color: #3498db;
+  }
+
+  &::after {
+    content: "";
+    background: #ecf0f1;
+    position: absolute;
+    z-index: -1;
+    padding: 20px 50px;
+    display: block;
+  }
+
+  &::after {
+    transition: all 0.3s ease;
+  }
+  &:hover::after {
+    transition: all 0.3s ease-out;
+  }
+
+  &::after {
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(-45deg) scale(0, 1);
+  }
+
+  &:hover::after {
+    transform: skewX(-45deg) scale(1, 1);
+  }
+}
