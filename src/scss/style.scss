@@ -450,3 +450,63 @@ body._lock {
     }
   }
 }
+
+/*-------------------------------------------------------------*/
+/*-----Pricing-------------------------------------------------*/
+/*-------------------------------------------------------------*/
+.pricing {
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 60px 60px;
+  }
+}
+
+.pricing__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 33%;
+  height: 100%;
+}
+.tariff {
+  & > * {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+  &__image {
+  }
+  .tariff__title {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 160%;
+    color: #263238;
+    text-align: center;
+  }
+  .tariff__paragraph {
+    font-size: 20px;
+    line-height: 150%;
+    color: #8f95a5;
+  }
+  .tariff__price {
+    background: #eeeeee;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 30px;
+    line-height: 150%;
+    color: #263238;
+    transition: 0.5s;
+    cursor: pointer;
+    & span {
+      font-size: 18px;
+      line-height: 27px;
+      color: #546269;
+    }
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
