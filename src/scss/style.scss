@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 18px;
 }
 
@@ -112,9 +112,6 @@ body._lock {
 /*-------------------------------------------------------------*/
 
 .header {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
 }
 
@@ -129,7 +126,6 @@ body._lock {
 
 .menu {
   &__logo {
-    font-family: "Poppins";
     font-size: 36px;
     line-height: 54px;
     color: #000000;
@@ -145,15 +141,10 @@ body._lock {
     font-size: 24px;
     padding: 5px 10px;
     transition: 0.4s;
-    &:hover {
-      // background-color: #643a79;
-      // border-radius: 5px;
-    }
   }
 }
 
 .btn-posnaware {
-  font-family: "Poppins";
   font-size: 18px;
   line-height: 27px;
   border: 2px solid #263238;
@@ -165,7 +156,7 @@ body._lock {
   display: block;
   overflow: hidden;
   width: 100%;
-  max-width: 160px;
+  max-width: 180px;
   text-align: center;
 
   &:hover {
@@ -315,6 +306,48 @@ body._lock {
 /*-----Home----------------------------------------------------*/
 /*-------------------------------------------------------------*/
 
-.home__container img {
-  max-width: 1327px;
+.home__container {
+  padding-top: 115px;
+  display: flex;
+  justify-content: center;
+
+  gap: 60px 60px;
+  @media (max-width: 575px) {
+    flex-wrap: wrap;
+  }
+}
+
+.home {
+  &__title {
+    max-width: 386px;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 125%;
+    color: #000000;
+    margin-bottom: 40px;
+  }
+
+  &__subtitle {
+    max-width: 632px;
+    font-size: 24px;
+    line-height: 36px;
+    color: #8f95a5;
+    margin-bottom: 60px;
+  }
+
+  &__button {
+    padding: 15px 55px;
+    font-size: 32px;
+    line-height: 150%;
+    color: #ffffff;
+    background: #263238;
+    border-radius: 15px;
+  }
+
+  &__image {
+    max-width: 680px;
+    & img {
+      width: 100%;
+    }
+  }
 }
